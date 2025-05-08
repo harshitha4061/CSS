@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 10px;
+        }
+
+        .container {
+            font-size: 20px;
+            border: 5px solid red;
+            /* set the size of the website whole height of web page */
+            width: 100vw;
+            /* set the size of the website whole width of web page */
+            height: 100vh;
+        }
+
+        .a {
+            /* we use em when we want to set the size of the element based on the parent */
+            /* parent is container */
+            font-size: 3em;
+            padding: 3em;
+            /* the size is set relative to the parent fontsize of a */
+        }
+
+        .b {
+            /* to set size relative to size of the html (set size of all element with respect to a element) */
+            font-size: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="a">this is para1</p>
+        <p class="b">this is para2</p>
+        <p id="c">this is para3</p>
+    </div>
+</body>
+
+</html>

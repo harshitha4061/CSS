@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            overflow: auto;
+            border: 2px solid red;
+            background-color: bisque;
+            height: 400px;
+            width: 100%;
+            display: flex;
+            /* flex loo default gaa column wise  */
+
+            /* default value of flex direction is (row) */
+            /* flex-direction: row; */
+            /* flex-direction: column; */
+            /*flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+            /* flex wrap default value is no wrap */
+            /* flex-wrap:wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            /* flex flow used to define more than one flex property short hand noatation */
+            /* flex-flow: row-reverse wrap-reverse; */
+
+            /* justify  center is used to bring content to center */
+            /* justify-content:center;  */
+            /* justify space between is used to give space between box */
+            /* justify-content: space-between; */
+            /* justify space evenly is used to give space at the starting and ending including between the box */
+            /* justify-content: space-evenly; */
+            /* justify space around is used to provide even space around the box */
+            /* justify-content: space-around;
+            in flex box last instruction is given prority than instruction above it */
+
+            /* align items for vertical alignment */
+            /* align-items: center;
+            align-items: flex-start;
+            align-items: flex-end; */
+            /* u can observe strech when it is in wrap*/
+            /* align-items: stretch; */
+            /* default value align items is flex-start */
+        }
+
+        #box {
+            border: 2px dotted blue;
+            background-color: aqua;
+            width: 100px;
+            height: 30px;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .box-1 {
+            flex-grow: 3;
+            /* flex-basis: 200px; */
+            /* flex-direction row unta row loo width 
+            flex direction column loo unda height */
+            /* order:4; */
+        }
+
+        .box-2 {
+            flex-grow: 4;
+
+            /* more big is the order it goes to the end */
+            /* order: 10; */
+        }
+
+        .box-3 {
+            flex-grow: 2;
+        }
+
+        .box-4 {
+            flex-shrink: 2;
+
+            /* short hand noation for flex items grow,shrink,basis */
+            /* flex:3 2 490px; */
+
+            /* align for flex items */
+            /* align-self:center;
+            align-self: flex-end;
+            align-self: flex-start; */
+        }
+
+        .box-5 {
+            flex-shrink: 3;
+        }
+
+        .box-6 {
+            flex-shrink: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p id="box" class="box-1">1</p>
+        <p id="box" class="box-2">2</p>
+        <p id="box" class="box-3">3</p>
+        <p id="box" class="box-4">4</p>
+        <p id="box" class="box-5">5</p>
+        <p id="box" class="box-6">6</p>
+    </div>
+</body>
+
+</html>

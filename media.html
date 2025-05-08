@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* media types */
+       @media only screen and (max-width: 300px){
+         .one{
+          display:block;
+          background-color: red;}
+       }
+       @media only screen and (max-width: 500px) and (min-width: 300px){
+        .two{
+          display:block;
+          background-color: yellow;}
+       }
+       @media only screen and (max-width: 800px) and (min-width: 500px) {
+        .three{
+          display:block;
+          background-color: blue;}
+       }
+       @media only screen and (min-width: 800px) and (min-width: 500px) {
+        .four{
+          display:block;
+          background-color: green;}
+       }
+       p {
+          padding: 10px;
+          border: 1px solid #000;
+          margin: 5px;
+       }
+    </style>
+</head>
+<body>
+    <p class="one">iphone sc</p>
+    <p class="two">android</p>
+    <p class="three">tablet</p>
+    <p class="four">desktop</p>
+</body>
+</html>
+

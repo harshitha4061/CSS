@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .b1{
+            background-color: brown;
+            width:100px;
+            height:100px;
+            margin:0px;
+            position:absolute;
+            top:20px;
+            z-index: 30;
+            /* z index is general used for position box,when two boxes overlap which one should come up and which one sholud go down is decided using z-index ,bigger the number the box comes up */
+        }
+        .b2{
+            background-color: blue;
+            width:100px;
+            height:100px;
+            margin:0px;
+            position:absolute;
+            top:30px;
+            z-index: 32;
+            /* display:none; */
+            /* the box disapper and space also allotes to other box */
+        }
+        .b3{
+            background-color: rebeccapurple;
+            width:100px;
+            height:100px;
+            margin:0px;
+            /* visibility: hidden; */
+            /* the box disappears and we can see space */
+
+        }
+        .b4{
+            background-color: chocolate;
+            width:100px;
+            height:100px;
+            margin:0px;
+        }
+    </style>
+</head>
+<body>
+    <p class="b1">1</p>
+    <p class="b2">2</p>
+    <p class="b3">3</p>
+    <p class="b4">4</p>
+</body>
+</html>
